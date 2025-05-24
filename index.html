@@ -1,0 +1,60 @@
+
+
+<article class="c-social-card">
+  <h1 class="c-social-card__name">Alexandre Conte</h1>
+
+
+  <img
+    src="src/alexandreconte.jpg"
+    alt={`Picture of ${name}`}
+    width="200"
+    height="200"
+    class="c-social-card__picture">
+
+  <address class="c-social-card__address">Av. C11 - Setor Sudoeste.</address>
+
+  <aside>
+     <a href="www.linkedin.com/in/alexandre-contedev" target="_blank">
+     <button>Meu Linkedin</button>
+     </a>
+
+    <a href="https://www.exemplo.com" target="_blank">
+    <button>Ir para o site</button>
+    </a>
+
+  </aside>
+</article>
+
+<style lang="scss">
+.c-social-card {  
+  align-items: center;
+  background-color: #fff;
+  box-shadow:
+    0 1.1px 2.2px rgba(0, 0, 0, 0.07),
+    0 2.7px 5.3px rgba(0, 0, 0, 0.05),
+    0 5px 10px rgba(0, 0, 0, 0.042),
+    0 8.9px 17.9px rgba(0, 0, 0, 0.035),
+    0 16.7px 33.4px rgba(0, 0, 0, 0.028),
+    0 40px 80px rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+
+  &__picture {
+    border-radius: 9999px;
+    outline: 1px solid gainsboro;
+    order: -1;
+  }
+
+  &__name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    margin: 12px 0 0;
+    text-align: center;
+  }
+
+ 
+}
+</style>
