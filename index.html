@@ -1,4 +1,15 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Card</title>
+</head>
+<body>
+
+
+
 
 <article class="c-social-card">
   <h1 class="c-social-card__name">Alexandre Conte</h1>
@@ -14,18 +25,63 @@
   <address class="c-social-card__address">Av. C11 - Setor Sudoeste.</address>
 
   <aside>
-     <a href="www.linkedin.com/in/alexandre-contedev" target="_blank">
+     <a href="https://www.linkedin.com/in/alexandre-contedev" target="_blank">
      <button>Meu Linkedin</button>
      </a>
 
-    <a href="https://www.exemplo.com" target="_blank">
-    <button>Ir para o site</button>
+    <a href="https://github.com/AlexandreDevG4" target="_blank">
+    <button>GitHub</button>
     </a>
+    </aside>
+   
+   
+    <!-- Sobre mim abaixo da foto -->
+   <details style="margin-top: 50px;">
+    <summary><strong>Sobre mim</strong></summary>
+    <p style="max-width: 400px; margin: auto;">
+      Olá! Meu nome é Alexandre Conte, tenho 30 anos, curso Análise e Desenvolvimento de Sistemas e atualmente trabalho como Analista de Suporte Técnico.
 
-  </aside>
+Meu interesse por tecnologia vem desde a infância, mas foi durante a pandemia, em busca de crescimento profissional, que consegui uma oportunidade como Web Designer. Foi nesse momento que me aproximei de vez da área e tive a certeza do caminho que gostaria de seguir.
+
+Desde então, enfrentei diversos desafios, tanto profissionais quanto pessoais — mas nenhum foi forte o suficiente para me fazer desistir dos meus objetivos.
+
+Atualmente, meu foco é migrar para a área de desenvolvimento, começando pelo front-end, e seguir evoluindo como pessoa e profissional dentro da carreira que escolhi com tanto propósito. Estou aprendendo e construindo meus primeiros projetos com HTML, CSS e JavaScript, sempre buscando melhorar a cada linha de código.
+    </p>
+   </details>
+
+ 
 </article>
 
+    
+</body>
 <style lang="scss">
+ 
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+  }
+
+  summary::-webkit-details-marker {
+    display: none; /* esconde a setinha padrão */
+  }
+
+  summary::before {
+    
+    font-size: 14px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
+  details[open] summary::before {
+    transform: rotate(90deg);
+  }
+
+ img {
+  border-radius: 8px;
+}
+
+
 .c-social-card {  
   align-items: center;
   background-color: #fff;
@@ -58,3 +114,5 @@
  
 }
 </style>
+
+</html>
